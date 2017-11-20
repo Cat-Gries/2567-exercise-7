@@ -26,18 +26,19 @@
 	5.3 - Text Sizes
 	5.4 - Alignments
 --------------------------------------------------------------*/
-
+* {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
 
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
-html {
-	font-size: 14px;
+nav, h1, h2, h3 {
+	text-transform: uppercase;
 }
-body {
-	font-family: 'Open Sans', sans-serif;
-	color: white;
-}
+
 /*--------------------------------------------------------------
 1.1 - BODY
 -------------------------------------------------------------- */
@@ -60,6 +61,9 @@ h1 {
     line-height: 5rem;
     text-align: center;
     padding: 20px;
+	padding-top: 50px;
+	float: none;
+	margin: 0 auto;
 }
 
 h2 {
@@ -150,6 +154,7 @@ dd {
 
 nav {
 	text-align: right;
+	float: right;
 }
 
 nav li  {
@@ -168,8 +173,6 @@ nav a {
 nav a:hover {
 	background-color: rgba(255,255,255,.5);
 }
-
-
 
 /*--------------------------------------------------------------
 3.0 - SITE STRUCTURE
@@ -355,7 +358,7 @@ figure {
 -------------------------------------------------------------- */
 
 #hero { 
-  background: url(../img/hero.jpeg) no-repeat center center fixed; 
+  background: url(../img/hero.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -383,24 +386,14 @@ figure {
 /*--------------------------------------------------------------
 5.2 - TXT UTILITY
 -------------------------------------------------------------- */
-.txt-uppercase {
-	text-transform:uppercase;
-}
-.txt-center {
-	text-align: center;
-}
+
 /*--------------------------------------------------------------
 5.3 - SPACING
 -------------------------------------------------------------- */
-.p-t-sm {
-	padding-top: 10px;
-}
-.p-t-md {
+header {
 	padding-top: 20px;
 }
-.p-t-lg {
-	padding-top: 50px;
-}
+
 .p-b-lg {
 	padding-bottom: 50px;
 }
@@ -416,17 +409,6 @@ figure {
 /*--------------------------------------------------------------
 5.4 - ALIGNMENTS
 -------------------------------------------------------------- */
-
-.center-block {
-	margin: 0 auto;
-	float: none !important;
-}
-
-.push-right {
-	float: right !important;
-}
-
-
 
 
 
